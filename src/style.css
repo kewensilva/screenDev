@@ -1,18 +1,37 @@
 html,
 body {
-    width: 100%;
-    height: 100%;
+
+    overflow: hidden;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
 }
 
-.drag {
+.window {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #111;
+    display: flex;
+}
 
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
-        overflow: hidden;
-        -webkit-app-region: drag;
+.drag-zone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    -webkit-app-region: drag;
+    z-index: 10;
+}
+
+webview {
+    width: 100%;
+    height: 100%;
+    border: none;
+
 }
