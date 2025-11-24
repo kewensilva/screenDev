@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title> Mini Player - Major Budapeste - Kick</title>
+    <link rel="shortcut icon" href="./logo-major.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="window">
         <div class="drag-zone"></div>
-        <webview src="https://player.kick.com/ale_apoka?muted=true&allowfullscreen=true">
+        <div class="close-btn" onclick="window.close()"></div>
+
+        <webview src="https://player.kick.com/gaules?muted=false&allowfullscreen=true">
         </webview>
 
     </div>
